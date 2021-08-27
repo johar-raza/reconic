@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.91 scan initiated Mon Aug 23 08:41:12 2021 as: nmap -p53,443,853 -sV -sC -T4 -Pn -oA 8.8.8.8/nmap/scan 8.8.8.8 -->
+<nmaprun scanner="nmap" args="nmap -p53,443,853 -sV -sC -T4 -Pn -oA 8.8.8.8/nmap/scan 8.8.8.8" start="1629722472" startstr="Mon Aug 23 08:41:12 2021" version="7.91" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="3" services="53,443,853"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1629722473" endtime="1629722555"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="8.8.8.8" addrtype="ipv4"/>
+<hostnames>
+<hostname name="dns.google" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="53"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="https" product="HTTP server (unknown)" servicefp="SF-Port443-TCP:V=7.91%T=SSL%I=7%D=8/23%Time=61239775%P=x86_64-pc-linux-gnu%r(GetRequest,2C9,&quot;HTTP/1\.0\x20302\x20Found\r\nAccess-Control-Allow-Origin:\x20\*\r\nX-Content-Type-Options:\x20nosniff\r\nLocation:\x20https://dns\.google/\r\nDate:\x20Mon,\x2023\x20Aug\x202021\x2012:41:26\x20GMT\r\nContent-Type:\x20text/html;\x20charset=UTF-8\r\nServer:\x20HTTP\x20server\x20\(unknown\)\r\nContent-Length:\x20216\r\nX-XSS-Protection:\x200\r\nX-Frame-Options:\x20SAMEORIGIN\r\nAlt-Svc:\x20h3=\&quot;:443\&quot;;\x20ma=2592000,h3-29=\&quot;:443\&quot;;\x20ma=2592000,h3-T051=\&quot;:443\&quot;;\x20ma=2592000,h3-Q050=\&quot;:443\&quot;;\x20ma=2592000,h3-Q046=\&quot;:443\&quot;;\x20ma=2592000,h3-Q043=\&quot;:443\&quot;;\x20ma=2592000,quic=\&quot;:443\&quot;;\x20ma=2592000;\x20v=\&quot;46,43\&quot;\r\n\r\n&lt;HTML&gt;&lt;HEAD&gt;&lt;meta\x20http-equiv=\&quot;content-type\&quot;\x20content=\&quot;text/html;charset=utf-8\&quot;&gt;\n&lt;TITLE&gt;302\x20Moved&lt;/TITLE&gt;&lt;/HEAD&gt;&lt;BODY&gt;\n&lt;H1&gt;302\x20Moved&lt;/H1&gt;\nThe\x20document\x20has\x20moved\n&lt;A\x20HREF=\&quot;https://dns\.google/\&quot;&gt;here&lt;/A&gt;\.\r\n&lt;/BODY&gt;&lt;/HTML&gt;\r\n&quot;)%r(HTTPOptions,2A9,&quot;HTTP/1\.0\x20302\x20Found\r\nX-Content-Type-Options:\x20nosniff\r\nLocation:\x20https://dns\.google/\r\nDate:\x20Mon,\x2023\x20Aug\x202021\x2012:41:27\x20GMT\r\nContent-Type:\x20text/html;\x20charset=UTF-8\r\nServer:\x20HTTP\x20server\x20\(unknown\)\r\nContent-Length:\x20216\r\nX-XSS-Protection:\x200\r\nX-Frame-Options:\x20SAMEORIGIN\r\nAlt-Svc:\x20h3=\&quot;:443\&quot;;\x20ma=2592000,h3-29=\&quot;:443\&quot;;\x20ma=2592000,h3-T051=\&quot;:443\&quot;;\x20ma=2592000,h3-Q050=\&quot;:443\&quot;;\x20ma=2592000,h3-Q046=\&quot;:443\&quot;;\x20ma=2592000,h3-Q043=\&quot;:443\&quot;;\x20ma=2592000,quic=\&quot;:443\&quot;;\x20ma=2592000;\x20v=\&quot;46,43\&quot;\r\n\r\n&lt;HTML&gt;&lt;HEAD&gt;&lt;meta\x20http-equiv=\&quot;content-type\&quot;\x20content=\&quot;text/html;charset=utf-8\&quot;&gt;\n&lt;TITLE&gt;302\x20Moved&lt;/TITLE&gt;&lt;/HEAD&gt;&lt;BODY&gt;\n&lt;H1&gt;302\x20Moved&lt;/H1&gt;\nThe\x20document\x20has\x20moved\n&lt;A\x20HREF=\&quot;https://dns\.google/\&quot;&gt;here&lt;/A&gt;\.\r\n&lt;/BODY&gt;&lt;/HTML&gt;\r\n&quot;)%r(FourOhFourRequest,307,&quot;HTTP/1\.0\x20302\x20Found\r\nAccess-Control-Allow-Origin:\x20\*\r\nX-Content-Type-Options:\x20nosniff\r\nLocation:\x20https://dns\.google/nice%20ports%2C/Trinity\.txt\.bak\r\nDate:\x20Mon,\x2023\x20Aug\x202021\x2012:41:27\x20GMT\r\nContent-Type:\x20text/html;\x20charset=UTF-8\r\nServer:\x20HTTP\x20server\x20\(unknown\)\r\nContent-Length:\x20247\r\nX-XSS-Protection:\x200\r\nX-Frame-Options:\x20SAMEORIGIN\r\nAlt-Svc:\x20h3=\&quot;:443\&quot;;\x20ma=2592000,h3-29=\&quot;:443\&quot;;\x20ma=2592000,h3-T051=\&quot;:443\&quot;;\x20ma=2592000,h3-Q050=\&quot;:443\&quot;;\x20ma=2592000,h3-Q046=\&quot;:443\&quot;;\x20ma=2592000,h3-Q043=\&quot;:443\&quot;;\x20ma=2592000,quic=\&quot;:443\&quot;;\x20ma=2592000;\x20v=\&quot;46,43\&quot;\r\n\r\n&lt;HTML&gt;&lt;HEAD&gt;&lt;meta\x20http-equiv=\&quot;content-type\&quot;\x20content=\&quot;text/html;charset=utf-8\&quot;&gt;\n&lt;TITLE&gt;302\x20Moved&lt;/TITLE&gt;&lt;/HEAD&gt;&lt;BODY&gt;\n&lt;H1&gt;302\x20Moved&lt;/H1&gt;\nThe\x20document\x20has\x20moved\n&lt;A\x20HREF=\&quot;https://dns\.google/nice%20ports%2C/Trinity\.txt\.bak\&quot;&gt;here&lt;/A&gt;\.\r\n&lt;/BODY&gt;&lt;/HTML&gt;\r\n&quot;);" tunnel="ssl" method="probed" conf="10"/><script id="fingerprint-strings" output="&#xa;  FourOhFourRequest: &#xa;    HTTP/1.0 302 Found&#xa;    Access-Control-Allow-Origin: *&#xa;    X-Content-Type-Options: nosniff&#xa;    Location: https://dns.google/nice%20ports%2C/Trinity.txt.bak&#xa;    Date: Mon, 23 Aug 2021 12:41:27 GMT&#xa;    Content-Type: text/html; charset=UTF-8&#xa;    Server: HTTP server (unknown)&#xa;    Content-Length: 247&#xa;    X-XSS-Protection: 0&#xa;    X-Frame-Options: SAMEORIGIN&#xa;    Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000,h3-T051=&quot;:443&quot;; ma=2592000,h3-Q050=&quot;:443&quot;; ma=2592000,h3-Q046=&quot;:443&quot;; ma=2592000,h3-Q043=&quot;:443&quot;; ma=2592000,quic=&quot;:443&quot;; ma=2592000; v=&quot;46,43&quot;&#xa;    &lt;HTML&gt;&lt;HEAD&gt;&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html;charset=utf-8&quot;&gt;&#xa;    &lt;TITLE&gt;302 Moved&lt;/TITLE&gt;&lt;/HEAD&gt;&lt;BODY&gt;&#xa;    &lt;H1&gt;302 Moved&lt;/H1&gt;&#xa;    document has moved&#xa;    HREF=&quot;https://dns.google/nice%20ports%2C/Trinity.txt.bak&quot;&gt;here&lt;/A&gt;.&#xa;    &lt;/BODY&gt;&lt;/HTML&gt;&#xa;  GetRequest: &#xa;    HTTP/1.0 302 Found&#xa;    Access-Control-Allow-Origin: *&#xa;    X-Content-Type-Options: nosniff&#xa;    Location: https://dns.google/&#xa;    Date: Mon, 23 Aug 2021 12:41:26 GMT&#xa;    Content-Type: text/html; charset=UTF-8&#xa;    Server: HTTP server (unknown)&#xa;    Content-Length: 216&#xa;    X-XSS-Protection: 0&#xa;    X-Frame-Options: SAMEORIGIN&#xa;    Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000,h3-T051=&quot;:443&quot;; ma=2592000,h3-Q050=&quot;:443&quot;; ma=2592000,h3-Q046=&quot;:443&quot;; ma=2592000,h3-Q043=&quot;:443&quot;; ma=2592000,quic=&quot;:443&quot;; ma=2592000; v=&quot;46,43&quot;&#xa;    &lt;HTML&gt;&lt;HEAD&gt;&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html;charset=utf-8&quot;&gt;&#xa;    &lt;TITLE&gt;302 Moved&lt;/TITLE&gt;&lt;/HEAD&gt;&lt;BODY&gt;&#xa;    &lt;H1&gt;302 Moved&lt;/H1&gt;&#xa;    document has moved&#xa;    HREF=&quot;https://dns.google/&quot;&gt;here&lt;/A&gt;.&#xa;    &lt;/BODY&gt;&lt;/HTML&gt;&#xa;  HTTPOptions: &#xa;    HTTP/1.0 302 Found&#xa;    X-Content-Type-Options: nosniff&#xa;    Location: https://dns.google/&#xa;    Date: Mon, 23 Aug 2021 12:41:27 GMT&#xa;    Content-Type: text/html; charset=UTF-8&#xa;    Server: HTTP server (unknown)&#xa;    Content-Length: 216&#xa;    X-XSS-Protection: 0&#xa;    X-Frame-Options: SAMEORIGIN&#xa;    Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000,h3-T051=&quot;:443&quot;; ma=2592000,h3-Q050=&quot;:443&quot;; ma=2592000,h3-Q046=&quot;:443&quot;; ma=2592000,h3-Q043=&quot;:443&quot;; ma=2592000,quic=&quot;:443&quot;; ma=2592000; v=&quot;46,43&quot;&#xa;    &lt;HTML&gt;&lt;HEAD&gt;&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html;charset=utf-8&quot;&gt;&#xa;    &lt;TITLE&gt;302 Moved&lt;/TITLE&gt;&lt;/HEAD&gt;&lt;BODY&gt;&#xa;    &lt;H1&gt;302 Moved&lt;/H1&gt;&#xa;    document has moved&#xa;    HREF=&quot;https://dns.google/&quot;&gt;here&lt;/A&gt;.&#xa;    &lt;/BODY&gt;&lt;/HTML&gt;"><elem key="FourOhFourRequest">&#xa;    HTTP/1.0 302 Found&#xa;    Access-Control-Allow-Origin: *&#xa;    X-Content-Type-Options: nosniff&#xa;    Location: https://dns.google/nice%20ports%2C/Trinity.txt.bak&#xa;    Date: Mon, 23 Aug 2021 12:41:27 GMT&#xa;    Content-Type: text/html; charset=UTF-8&#xa;    Server: HTTP server (unknown)&#xa;    Content-Length: 247&#xa;    X-XSS-Protection: 0&#xa;    X-Frame-Options: SAMEORIGIN&#xa;    Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000,h3-T051=&quot;:443&quot;; ma=2592000,h3-Q050=&quot;:443&quot;; ma=2592000,h3-Q046=&quot;:443&quot;; ma=2592000,h3-Q043=&quot;:443&quot;; ma=2592000,quic=&quot;:443&quot;; ma=2592000; v=&quot;46,43&quot;&#xa;    &lt;HTML&gt;&lt;HEAD&gt;&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html;charset=utf-8&quot;&gt;&#xa;    &lt;TITLE&gt;302 Moved&lt;/TITLE&gt;&lt;/HEAD&gt;&lt;BODY&gt;&#xa;    &lt;H1&gt;302 Moved&lt;/H1&gt;&#xa;    document has moved&#xa;    HREF=&quot;https://dns.google/nice%20ports%2C/Trinity.txt.bak&quot;&gt;here&lt;/A&gt;.&#xa;    &lt;/BODY&gt;&lt;/HTML&gt;</elem>
+<elem key="GetRequest">&#xa;    HTTP/1.0 302 Found&#xa;    Access-Control-Allow-Origin: *&#xa;    X-Content-Type-Options: nosniff&#xa;    Location: https://dns.google/&#xa;    Date: Mon, 23 Aug 2021 12:41:26 GMT&#xa;    Content-Type: text/html; charset=UTF-8&#xa;    Server: HTTP server (unknown)&#xa;    Content-Length: 216&#xa;    X-XSS-Protection: 0&#xa;    X-Frame-Options: SAMEORIGIN&#xa;    Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000,h3-T051=&quot;:443&quot;; ma=2592000,h3-Q050=&quot;:443&quot;; ma=2592000,h3-Q046=&quot;:443&quot;; ma=2592000,h3-Q043=&quot;:443&quot;; ma=2592000,quic=&quot;:443&quot;; ma=2592000; v=&quot;46,43&quot;&#xa;    &lt;HTML&gt;&lt;HEAD&gt;&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html;charset=utf-8&quot;&gt;&#xa;    &lt;TITLE&gt;302 Moved&lt;/TITLE&gt;&lt;/HEAD&gt;&lt;BODY&gt;&#xa;    &lt;H1&gt;302 Moved&lt;/H1&gt;&#xa;    document has moved&#xa;    HREF=&quot;https://dns.google/&quot;&gt;here&lt;/A&gt;.&#xa;    &lt;/BODY&gt;&lt;/HTML&gt;</elem>
+<elem key="HTTPOptions">&#xa;    HTTP/1.0 302 Found&#xa;    X-Content-Type-Options: nosniff&#xa;    Location: https://dns.google/&#xa;    Date: Mon, 23 Aug 2021 12:41:27 GMT&#xa;    Content-Type: text/html; charset=UTF-8&#xa;    Server: HTTP server (unknown)&#xa;    Content-Length: 216&#xa;    X-XSS-Protection: 0&#xa;    X-Frame-Options: SAMEORIGIN&#xa;    Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000,h3-T051=&quot;:443&quot;; ma=2592000,h3-Q050=&quot;:443&quot;; ma=2592000,h3-Q046=&quot;:443&quot;; ma=2592000,h3-Q043=&quot;:443&quot;; ma=2592000,quic=&quot;:443&quot;; ma=2592000; v=&quot;46,43&quot;&#xa;    &lt;HTML&gt;&lt;HEAD&gt;&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html;charset=utf-8&quot;&gt;&#xa;    &lt;TITLE&gt;302 Moved&lt;/TITLE&gt;&lt;/HEAD&gt;&lt;BODY&gt;&#xa;    &lt;H1&gt;302 Moved&lt;/H1&gt;&#xa;    document has moved&#xa;    HREF=&quot;https://dns.google/&quot;&gt;here&lt;/A&gt;.&#xa;    &lt;/BODY&gt;&lt;/HTML&gt;</elem>
+</script><script id="http-server-header" output="&#xa;  HTTP server (unknown)&#xa;  scaffolding on HTTPServer2"><elem>HTTP server (unknown)</elem>
+<elem>scaffolding on HTTPServer2</elem>
+</script><script id="http-title" output="Google Public DNS"><elem key="title">Google Public DNS</elem>
+</script><script id="ssl-cert" output="Subject: commonName=dns.google&#xa;Subject Alternative Name: DNS:dns.google, DNS:dns.google.com, DNS:*.dns.google.com, DNS:8888.google, DNS:dns64.dns.google, IP Address:8.8.8.8, IP Address:8.8.4.4, IP Address:2001:4860:4860:0:0:0:0:8888, IP Address:2001:4860:4860:0:0:0:0:8844, IP Address:2001:4860:4860:0:0:0:0:6464, IP Address:2001:4860:4860:0:0:0:0:64&#xa;Not valid before: 2021-07-26T04:03:34&#xa;Not valid after:  2021-10-18T04:03:33"><table key="subject">
+<elem key="commonName">dns.google</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">GTS CA 1C3</elem>
+<elem key="countryName">US</elem>
+<elem key="organizationName">Google Trust Services LLC</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">CB6DDCB65A0DB6C1EE5A9935F71EA87AC84069A3C52DB4284C180F61C62D4CEF6D8495ADE3D25C6F1092695734C7FCA677664D4C4BC2296E26FA100A6773459DFCFC431F264C8282E64FE618A9A93B15B848209ABE1566477972F5DBAE4B31E841CEDBAC8285ED7C55525F8CE3A2A2E3CDC3F269DC002824B7FF08ED9DCD9CE6995B6C18075757D90388C42907768DE9B1C519B8514006CC771281F06DCB24CF6D885F7BC6FCCE44E28936C8FB2632823E729DB8D2C9E472C14D9AD0C7D21C6C2A90635BBD2251B9C04713F12026949CB393B177E8199067A796A9FAD77452B1E825638E5C067D5E05731D5280F7D985EE790CE7F3CD5F2C830FEECF3ABAD3B5</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">06:62:2F:88:22:C4:E1:A4:B1:B0:7A:E3:9B:45:43:A6:B5:12:A8:EC</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">keyid:8A:74:7F:AF:85:CD:EE:95:CD:3D:9C:D0:E2:46:14:F3:71:35:1D:27&#xa;</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">OCSP - URI:http://ocsp.pki.goog/gts1c3&#xa;CA Issuers - URI:http://pki.goog/repo/certs/gts1c3.der&#xa;</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:dns.google, DNS:dns.google.com, DNS:*.dns.google.com, DNS:8888.google, DNS:dns64.dns.google, IP Address:8.8.8.8, IP Address:8.8.4.4, IP Address:2001:4860:4860:0:0:0:0:8888, IP Address:2001:4860:4860:0:0:0:0:8844, IP Address:2001:4860:4860:0:0:0:0:6464, IP Address:2001:4860:4860:0:0:0:0:64</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 2.23.140.1.2.1&#xa;Policy: 1.3.6.1.4.1.11129.2.5.3&#xa;</elem>
+</table>
+<table>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+<elem key="value">&#xa;Full Name:&#xa;  URI:http://crls.pki.goog/gts1c3/zdATt0Ex_Fk.crl&#xa;</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : F6:5C:94:2F:D1:77:30:22:14:54:18:08:30:94:56:8E:&#xa;                E3:4D:13:19:33:BF:DF:0C:2F:20:0B:CC:4E:F1:64:E3&#xa;    Timestamp : Jul 26 05:03:35.463 2021 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:20:70:79:1A:A5:2B:F4:D4:AC:35:C0:E4:1F:&#xa;                72:93:A1:7E:C2:80:70:6B:EF:A5:C3:52:F2:82:A1:E8:&#xa;                99:72:F2:FE:02:20:40:CF:61:B0:10:1D:00:C0:C6:FC:&#xa;                6C:5A:10:58:00:DD:94:77:35:0C:1A:5B:99:04:5E:9A:&#xa;                68:B1:FE:7A:E7:D6&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 44:94:65:2E:B0:EE:CE:AF:C4:40:07:D8:A8:FE:28:C0:&#xa;                DA:E6:82:BE:D8:CB:31:B5:3F:D3:33:96:B5:B6:81:A8&#xa;    Timestamp : Jul 26 05:03:35.517 2021 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:21:00:BD:30:88:5F:13:C0:2D:AA:78:D4:3E:&#xa;                B4:B1:F6:E1:BC:B7:79:83:24:82:EF:04:B1:19:3D:2D:&#xa;                9F:4E:ED:FB:B1:02:20:17:8E:49:D7:C3:35:6E:E4:F3:&#xa;                77:E6:84:2A:AB:FC:03:B6:68:C8:E4:28:F1:37:EA:76:&#xa;                00:ED:E2:8E:E3:04:08</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2021-07-26T04:03:34</elem>
+<elem key="notAfter">2021-10-18T04:03:33</elem>
+</table>
+<elem key="md5">59f871a6369a32546c1a6157f354fb1f</elem>
+<elem key="sha1">bdf7d009f4745332c764489faeb948ea2a140aef</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIF4jCCBMqgAwIBAgIRAOEXEN+SvFp7CgAAAAD28XYwDQYJKoZIhvcNAQELBQAw&#xa;RjELMAkGA1UEBhMCVVMxIjAgBgNVBAoTGUdvb2dsZSBUcnVzdCBTZXJ2aWNlcyBM&#xa;TEMxEzARBgNVBAMTCkdUUyBDQSAxQzMwHhcNMjEwNzI2MDQwMzM0WhcNMjExMDE4&#xa;MDQwMzMzWjAVMRMwEQYDVQQDEwpkbnMuZ29vZ2xlMIIBIjANBgkqhkiG9w0BAQEF&#xa;AAOCAQ8AMIIBCgKCAQEAy23ctloNtsHuWpk19x6oeshAaaPFLbQoTBgPYcYtTO9t&#xa;hJWt49JcbxCSaVc0x/ymd2ZNTEvCKW4m+hAKZ3NFnfz8Qx8mTIKC5k/mGKmpOxW4&#xa;SCCavhVmR3ly9duuSzHoQc7brIKF7XxVUl+M46Ki483D8mncACgkt/8I7Z3NnOaZ&#xa;W2wYB1dX2QOIxCkHdo3pscUZuFFABsx3EoHwbcskz22IX3vG/M5E4ok2yPsmMoI+&#xa;cp240snkcsFNmtDH0hxsKpBjW70iUbnARxPxICaUnLOTsXfoGZBnp5ap+td0UrHo&#xa;JWOOXAZ9XgVzHVKA99mF7nkM5/PNXyyDD+7POrrTtQIDAQABo4IC+jCCAvYwDgYD&#xa;VR0PAQH/BAQDAgWgMBMGA1UdJQQMMAoGCCsGAQUFBwMBMAwGA1UdEwEB/wQCMAAw&#xa;HQYDVR0OBBYEFAZiL4gixOGksbB645tFQ6a1EqjsMB8GA1UdIwQYMBaAFIp0f6+F&#xa;ze6VzT2c0OJGFPNxNR0nMGoGCCsGAQUFBwEBBF4wXDAnBggrBgEFBQcwAYYbaHR0&#xa;cDovL29jc3AucGtpLmdvb2cvZ3RzMWMzMDEGCCsGAQUFBzAChiVodHRwOi8vcGtp&#xa;Lmdvb2cvcmVwby9jZXJ0cy9ndHMxYzMuZGVyMIGsBgNVHREEgaQwgaGCCmRucy5n&#xa;b29nbGWCDmRucy5nb29nbGUuY29tghAqLmRucy5nb29nbGUuY29tggs4ODg4Lmdv&#xa;b2dsZYIQZG5zNjQuZG5zLmdvb2dsZYcECAgICIcECAgEBIcQIAFIYEhgAAAAAAAA&#xa;AACIiIcQIAFIYEhgAAAAAAAAAACIRIcQIAFIYEhgAAAAAAAAAABkZIcQIAFIYEhg&#xa;AAAAAAAAAAAAZDAhBgNVHSAEGjAYMAgGBmeBDAECATAMBgorBgEEAdZ5AgUDMDwG&#xa;A1UdHwQ1MDMwMaAvoC2GK2h0dHA6Ly9jcmxzLnBraS5nb29nL2d0czFjMy96ZEFU&#xa;dDBFeF9Gay5jcmwwggEDBgorBgEEAdZ5AgQCBIH0BIHxAO8AdQD2XJQv0XcwIhRU&#xa;GAgwlFaO400TGTO/3wwvIAvMTvFk4wAAAXrhMmonAAAEAwBGMEQCIHB5GqUr9NSs&#xa;NcDkH3KToX7CgHBr76XDUvKCoeiZcvL+AiBAz2GwEB0AwMb8bFoQWADdlHc1DBpb&#xa;mQRemmix/nrn1gB2AESUZS6w7s6vxEAH2Kj+KMDa5oK+2MsxtT/TM5a1toGoAAAB&#xa;euEyal0AAAQDAEcwRQIhAL0wiF8TwC2qeNQ+tLH24by3eYMkgu8EsRk9LZ9O7fux&#xa;AiAXjknXwzVu5PN35oQqq/wDtmjI5CjxN+p2AO3ijuMECDANBgkqhkiG9w0BAQsF&#xa;AAOCAQEAvQeflQ3ucCmlxbV2P6lUimbBp51ALUObt8g1HWerGyS56gfZDhIfq55H&#xa;DPhJHKA7BQA4D2OzN6ACxcM+giUXFJmpdsyAfrna1dzT7OVGzZVpsJ+BN5WY+xTX&#xa;iymmxI5mYUevaNUim8KvWfkOqI9l9EMuAzv9gqgMSoTD2Wc4OlJq+aO26Whh5B7h&#xa;HJUSSFauLXF3EYCMDsbPsSWUuklhrWrfxr1gIZWTord0nFXmlFEM9s4FcqEo80PQ&#xa;caGgqXqkB1sGIPzN6N6p1kOo/KBRKMcCH2Q3w7o6Tf69Sr1vWW1KDL0qGPc2Llpi&#xa;EUukrzlTtgjJf9aw9DnelIUsG076TQ==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+<port protocol="tcp" portid="853"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="domain" extrainfo="generic dns response: SERVFAIL" servicefp="SF-Port853-TCP:V=7.91%T=SSL%I=7%D=8/23%Time=6123977A%P=x86_64-pc-linux-gnu%r(DNSVersionBindReqTCP,20,&quot;\0\x1e\0\x06\x81\x82\0\x01\0\0\0\0\0\0\x07version\x04bind\0\0\x10\0\x03&quot;);" tunnel="ssl" method="probed" conf="10"/><script id="dns-nsid" output="ERROR: Script execution failed (use -d to debug)"/><script id="fingerprint-strings" output="&#xa;  DNSVersionBindReqTCP: &#xa;    version&#xa;    bind"><elem key="DNSVersionBindReqTCP">&#xa;    version&#xa;    bind</elem>
+</script><script id="ssl-cert" output="Subject: commonName=dns.google&#xa;Subject Alternative Name: DNS:dns.google, DNS:dns.google.com, DNS:*.dns.google.com, DNS:8888.google, DNS:dns64.dns.google, IP Address:8.8.8.8, IP Address:8.8.4.4, IP Address:2001:4860:4860:0:0:0:0:8888, IP Address:2001:4860:4860:0:0:0:0:8844, IP Address:2001:4860:4860:0:0:0:0:6464, IP Address:2001:4860:4860:0:0:0:0:64&#xa;Not valid before: 2021-07-26T04:03:34&#xa;Not valid after:  2021-10-18T04:03:33"><table key="subject">
+<elem key="commonName">dns.google</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">GTS CA 1C3</elem>
+<elem key="countryName">US</elem>
+<elem key="organizationName">Google Trust Services LLC</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">CB6DDCB65A0DB6C1EE5A9935F71EA87AC84069A3C52DB4284C180F61C62D4CEF6D8495ADE3D25C6F1092695734C7FCA677664D4C4BC2296E26FA100A6773459DFCFC431F264C8282E64FE618A9A93B15B848209ABE1566477972F5DBAE4B31E841CEDBAC8285ED7C55525F8CE3A2A2E3CDC3F269DC002824B7FF08ED9DCD9CE6995B6C18075757D90388C42907768DE9B1C519B8514006CC771281F06DCB24CF6D885F7BC6FCCE44E28936C8FB2632823E729DB8D2C9E472C14D9AD0C7D21C6C2A90635BBD2251B9C04713F12026949CB393B177E8199067A796A9FAD77452B1E825638E5C067D5E05731D5280F7D985EE790CE7F3CD5F2C830FEECF3ABAD3B5</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">06:62:2F:88:22:C4:E1:A4:B1:B0:7A:E3:9B:45:43:A6:B5:12:A8:EC</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">keyid:8A:74:7F:AF:85:CD:EE:95:CD:3D:9C:D0:E2:46:14:F3:71:35:1D:27&#xa;</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">OCSP - URI:http://ocsp.pki.goog/gts1c3&#xa;CA Issuers - URI:http://pki.goog/repo/certs/gts1c3.der&#xa;</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:dns.google, DNS:dns.google.com, DNS:*.dns.google.com, DNS:8888.google, DNS:dns64.dns.google, IP Address:8.8.8.8, IP Address:8.8.4.4, IP Address:2001:4860:4860:0:0:0:0:8888, IP Address:2001:4860:4860:0:0:0:0:8844, IP Address:2001:4860:4860:0:0:0:0:6464, IP Address:2001:4860:4860:0:0:0:0:64</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 2.23.140.1.2.1&#xa;Policy: 1.3.6.1.4.1.11129.2.5.3&#xa;</elem>
+</table>
+<table>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+<elem key="value">&#xa;Full Name:&#xa;  URI:http://crls.pki.goog/gts1c3/zdATt0Ex_Fk.crl&#xa;</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : F6:5C:94:2F:D1:77:30:22:14:54:18:08:30:94:56:8E:&#xa;                E3:4D:13:19:33:BF:DF:0C:2F:20:0B:CC:4E:F1:64:E3&#xa;    Timestamp : Jul 26 05:03:35.463 2021 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:20:70:79:1A:A5:2B:F4:D4:AC:35:C0:E4:1F:&#xa;                72:93:A1:7E:C2:80:70:6B:EF:A5:C3:52:F2:82:A1:E8:&#xa;                99:72:F2:FE:02:20:40:CF:61:B0:10:1D:00:C0:C6:FC:&#xa;                6C:5A:10:58:00:DD:94:77:35:0C:1A:5B:99:04:5E:9A:&#xa;                68:B1:FE:7A:E7:D6&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 44:94:65:2E:B0:EE:CE:AF:C4:40:07:D8:A8:FE:28:C0:&#xa;                DA:E6:82:BE:D8:CB:31:B5:3F:D3:33:96:B5:B6:81:A8&#xa;    Timestamp : Jul 26 05:03:35.517 2021 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:21:00:BD:30:88:5F:13:C0:2D:AA:78:D4:3E:&#xa;                B4:B1:F6:E1:BC:B7:79:83:24:82:EF:04:B1:19:3D:2D:&#xa;                9F:4E:ED:FB:B1:02:20:17:8E:49:D7:C3:35:6E:E4:F3:&#xa;                77:E6:84:2A:AB:FC:03:B6:68:C8:E4:28:F1:37:EA:76:&#xa;                00:ED:E2:8E:E3:04:08</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2021-07-26T04:03:34</elem>
+<elem key="notAfter">2021-10-18T04:03:33</elem>
+</table>
+<elem key="md5">59f871a6369a32546c1a6157f354fb1f</elem>
+<elem key="sha1">bdf7d009f4745332c764489faeb948ea2a140aef</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIF4jCCBMqgAwIBAgIRAOEXEN+SvFp7CgAAAAD28XYwDQYJKoZIhvcNAQELBQAw&#xa;RjELMAkGA1UEBhMCVVMxIjAgBgNVBAoTGUdvb2dsZSBUcnVzdCBTZXJ2aWNlcyBM&#xa;TEMxEzARBgNVBAMTCkdUUyBDQSAxQzMwHhcNMjEwNzI2MDQwMzM0WhcNMjExMDE4&#xa;MDQwMzMzWjAVMRMwEQYDVQQDEwpkbnMuZ29vZ2xlMIIBIjANBgkqhkiG9w0BAQEF&#xa;AAOCAQ8AMIIBCgKCAQEAy23ctloNtsHuWpk19x6oeshAaaPFLbQoTBgPYcYtTO9t&#xa;hJWt49JcbxCSaVc0x/ymd2ZNTEvCKW4m+hAKZ3NFnfz8Qx8mTIKC5k/mGKmpOxW4&#xa;SCCavhVmR3ly9duuSzHoQc7brIKF7XxVUl+M46Ki483D8mncACgkt/8I7Z3NnOaZ&#xa;W2wYB1dX2QOIxCkHdo3pscUZuFFABsx3EoHwbcskz22IX3vG/M5E4ok2yPsmMoI+&#xa;cp240snkcsFNmtDH0hxsKpBjW70iUbnARxPxICaUnLOTsXfoGZBnp5ap+td0UrHo&#xa;JWOOXAZ9XgVzHVKA99mF7nkM5/PNXyyDD+7POrrTtQIDAQABo4IC+jCCAvYwDgYD&#xa;VR0PAQH/BAQDAgWgMBMGA1UdJQQMMAoGCCsGAQUFBwMBMAwGA1UdEwEB/wQCMAAw&#xa;HQYDVR0OBBYEFAZiL4gixOGksbB645tFQ6a1EqjsMB8GA1UdIwQYMBaAFIp0f6+F&#xa;ze6VzT2c0OJGFPNxNR0nMGoGCCsGAQUFBwEBBF4wXDAnBggrBgEFBQcwAYYbaHR0&#xa;cDovL29jc3AucGtpLmdvb2cvZ3RzMWMzMDEGCCsGAQUFBzAChiVodHRwOi8vcGtp&#xa;Lmdvb2cvcmVwby9jZXJ0cy9ndHMxYzMuZGVyMIGsBgNVHREEgaQwgaGCCmRucy5n&#xa;b29nbGWCDmRucy5nb29nbGUuY29tghAqLmRucy5nb29nbGUuY29tggs4ODg4Lmdv&#xa;b2dsZYIQZG5zNjQuZG5zLmdvb2dsZYcECAgICIcECAgEBIcQIAFIYEhgAAAAAAAA&#xa;AACIiIcQIAFIYEhgAAAAAAAAAACIRIcQIAFIYEhgAAAAAAAAAABkZIcQIAFIYEhg&#xa;AAAAAAAAAAAAZDAhBgNVHSAEGjAYMAgGBmeBDAECATAMBgorBgEEAdZ5AgUDMDwG&#xa;A1UdHwQ1MDMwMaAvoC2GK2h0dHA6Ly9jcmxzLnBraS5nb29nL2d0czFjMy96ZEFU&#xa;dDBFeF9Gay5jcmwwggEDBgorBgEEAdZ5AgQCBIH0BIHxAO8AdQD2XJQv0XcwIhRU&#xa;GAgwlFaO400TGTO/3wwvIAvMTvFk4wAAAXrhMmonAAAEAwBGMEQCIHB5GqUr9NSs&#xa;NcDkH3KToX7CgHBr76XDUvKCoeiZcvL+AiBAz2GwEB0AwMb8bFoQWADdlHc1DBpb&#xa;mQRemmix/nrn1gB2AESUZS6w7s6vxEAH2Kj+KMDa5oK+2MsxtT/TM5a1toGoAAAB&#xa;euEyal0AAAQDAEcwRQIhAL0wiF8TwC2qeNQ+tLH24by3eYMkgu8EsRk9LZ9O7fux&#xa;AiAXjknXwzVu5PN35oQqq/wDtmjI5CjxN+p2AO3ijuMECDANBgkqhkiG9w0BAQsF&#xa;AAOCAQEAvQeflQ3ucCmlxbV2P6lUimbBp51ALUObt8g1HWerGyS56gfZDhIfq55H&#xa;DPhJHKA7BQA4D2OzN6ACxcM+giUXFJmpdsyAfrna1dzT7OVGzZVpsJ+BN5WY+xTX&#xa;iymmxI5mYUevaNUim8KvWfkOqI9l9EMuAzv9gqgMSoTD2Wc4OlJq+aO26Whh5B7h&#xa;HJUSSFauLXF3EYCMDsbPsSWUuklhrWrfxr1gIZWTord0nFXmlFEM9s4FcqEo80PQ&#xa;caGgqXqkB1sGIPzN6N6p1kOo/KBRKMcCH2Q3w7o6Tf69Sr1vWW1KDL0qGPc2Llpi&#xa;EUukrzlTtgjJf9aw9DnelIUsG076TQ==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+</ports>
+<times srtt="33741" rttvar="20143" to="114313"/>
+</host>
+<runstats><finished time="1629722555" timestr="Mon Aug 23 08:42:35 2021" summary="Nmap done at Mon Aug 23 08:42:35 2021; 1 IP address (1 host up) scanned in 82.55 seconds" elapsed="82.55" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
