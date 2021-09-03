@@ -8,7 +8,6 @@ import sys
 import subprocess
 
 from cprint import *
-from pinger import ping
 from portscanner import portscanner
 
 
