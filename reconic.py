@@ -26,7 +26,7 @@ def banner():
     """
     print(white(banner))
     print(info("Version: 0.1"))
-    print(info("Created by Astr0x41\n\n"))
+    print(info("Created by Joras3c\n\n"))
     normal_text()
 
 
@@ -99,18 +99,12 @@ def reconic():
     if target == "Invalid IP address":
         print(error("Invalid IP address\n"))
     else:
-        ping_response = ping(target)
+        discovered_ports = portscanner(target)
+        recommended_scan = "nmap -p{ports} -sV -sC -T4 -Pn -oA {ip}/nmap/scan {ip}".format(ports=",".join(discovered_ports), ip=target)
+        print(running("Recommended nmap scan:\n"))
+        print("    " + recommended_scan)
         
-        if ping_response == 0:
-            discovered_ports = portscanner(target)
-            recommended_scan = "nmap -p{ports} -sV -sC -T4 -Pn -oA {ip}/nmap/scan {ip}".format(ports=",".join(discovered_ports), ip=target)
-            print(running("Recommended nmap scan:\n"))
-            print("    " + recommended_scan)
-            
-            choice_one(recommended_scan)
-            
-        else:
-            print(ask("Do you want to run a 'No ping' nmap scan on all ports?"))
+        choice_one(recommended_scan)
 
 
 if __name__=='__main__':
